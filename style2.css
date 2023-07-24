@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 400px;
+    width: 100%;
+    background-color: #e1f3fd;
+}
+
+.logo {
+    color: orange;
+    padding-top: 20px;
+}
+
+.nav {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.nav a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 50px;
+}
+
+.nav a:hover {
+    background-color: black;
+    color: orange;
+    border-radius: 30px;
+    transition: 0.9s;
+}
+/* responsive */
+@media(max-width:1089px){
+    header{
+        height: 600px;
+        text-align: center;
+    }
+    .nav a{
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+}
+@media(max-width:1096px){
+    .logo{
+        position: fixed;
+    }
+}
+
+
+/* header section is over */
+
+main {
+    height: 500px;
+    width: 100%;
+    background-color: #e1f3fd;
+}
+
+.main_text {
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+.main_text h3 {
+    font-size: 30px;
+
+}
+
+.main_text h1 {
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+.main_text p {
+    width: 40%;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.btn1 {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-top: 60px;
+    border: none;
+
+}
+
+.btn2 {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #fed200;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    margin: 5px;
+}
+
+.d1 {
+    display: flex;
+    margin-bottom: -300px;
+}
+
+.d1 img {
+    height: 300px;
+    width: 40%;
+    margin-left: 600px;
+    border-radius: 30px;
+}
+
+/* responsive */ 
+@media(max-width:1197px){
+    main{
+        height: 1100px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .main_text{
+        text-align: center;
+        margin: auto;
+    }
+    .main_text p{
+        width: 90%;
+    }
+    .main_text h1{
+        font-size: 55px;
+    }
+    .d1{
+       text-align: center;
+       width: 100%; 
+       margin-right: 600px;
+       
+    }
+    .d1 img{
+        width: 80%;
+        height: 500px;
+    }
+    @media(max-width: 1094px){
+        .d1{
+            text-align: center;
+            margin-right: 600px;
+    
+        }
+    }
+}
+
+/* main section is over */
+
+.section3 {
+    height: 700px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.section3 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.section3 p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.third {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+.box {
+    box-shadow: #fed200;
+    width: 31%;
+}
+
+.box img {
+    height: 50px;
+    width: 20%;
+}
+
+.btn5 {
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #fed200;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+
+/* section3 is over */
+
+/* RESPONSIVE */
+
+@media(max-width:992px) {
+    .section4 {
+        flex-wrap: wrap;
+        height: 1250px;
+    }
+    .box{
+        width: 90%;
+        height: 300px;
+    }
+}
+
+.section4 {
+    height: 600px;
+    width: 100%;
+    background-color: #e1f3fd;
+    display: flex;
+    padding-top: 100px;
+}
+
+.section4-text {
+
+    margin-left: 70px;
+}
+
+.section4-text h1 {
+    text-align: center;
+}
+
+.section4-text p {
+    font-size: 20px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.btn6 {
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #fed200;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+
+/* section4 is over */
+
+.section5 {}
+
+.section5 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.section5 p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.our {
+    display: flex;
+    height: 1000px;
+    width: 100%;
+}
+
+.d3 img {
+    height: 700px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.d3 h1 {
+    text-align: center;
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+.d3 h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #fed200;
+    font-size: 35px;
+}
+
+/* section5 is over */
+
+.section6 {
+    height: 650px;
+    width: 100%;
+    background-color: #e1f3fd;
+    text-align: center;
+
+}
+
+.section6-text {
+    display: flex;
+    margin-top: 190px;
+    justify-content: center;
+}
+
+.section6-text img {
+    height: 60px;
+    width: 10%;
+    margin-top: 100px;
+    display: flex;
+}
+
+.section6-text p {
+    width: 10%;
+    background-color: whitesmoke;
+    font-style: normal;
+}
+
+span {
+    color: #fed200;
+}
+
+.a {
+    height: 50px;
+    width: 5%;
+    background-color: black;
+    border-radius: 100%;
+    border: none;
+    margin-top: 50px;
+    float: right;
+    margin: 4px;
+}
+
+.b {
+    height: 50px;
+    width: 5%;
+    background-color: #fed200;
+    border-radius: 100%;
+    border: none;
+    float: right;
+    margin-top: 50px;
+    margin: 4px;
+}
+
+
+.c {
+    height: 50px;
+    width: 5%;
+    background-color: black;
+    border-radius: 100%;
+    border: none;
+    float: right;
+    margin-top: 70px;
+    margin: 4px;
+}
+
+/* sectoion6 is over */
+.section7 {
+    height: 600px;
+    width: 100%;
+}
+
+form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.d {
+    height: 80px;
+    width: 50%;
+    border-radius: 30px;
+    border: 3px solid black;
+    padding-left: 20px;
+    font-size: 18px;
+    margin: 10px;
+
+}
+
+.e {
+    height: 80px;
+    width: 50%;
+    border-radius: 30px;
+    border: 3px solid black;
+    padding-left: 20px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+.f {
+    height: 80px;
+    width: 50%;
+    border-radius: 30px;
+    border: 3px solid black;
+    padding-left: 20px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+.g {
+    height: 80px;
+    width: 50%;
+    border-radius: 30px;
+    border: 3px solid black;
+    padding-left: 20px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+form button {
+    height: 50px;
+    width: 100px;
+    background-color: #fed200;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* section7 is over */
+
+footer {
+    height: 500px;
+    width: 100%;
+}

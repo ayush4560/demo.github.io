@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 100px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav {
+      }
+      .nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 5px;
+        text-transform: uppercase;
+      }
+      .nav a:hover {
+        background-color: black;
+        color: green;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          height: 250px;
+        }
+        .nav a {
+          display: block;
+          text-align: center;
+        }
+      }
+      /*********************	header section is closed	*/
+      main {
+        width: 100%;
+        height: 660px;
+        color: white;
+        background-color: black;
+        display: flex;
+      }
+      .main_text {
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+        padding-top: 200px;
+      }
+      .main_text h1 {
+      }
+      .main_text p {
+        text-align: justify;
+        padding: 20px;
+        text-align-last: center;
+      }
+      .main_text button {
+        width: 150px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: green;
+      }
+      .main_text button:hover {
+        background-color: green;
+      }
+
+      .main_img {
+        width: 50%;
+      }
+      .main_img img {
+        width: 450px;
+        height: 450px;
+        margin-top: 100px;
+        border-radius: 50%;
+        margin-left: 100px;
+        transition: 0.2s;
+      }
+      .main_img img:hover {
+        transform: scale(1.2);
+      }
+
+      @media (max-width: 992px) {
+        main {
+          height: 1100px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .main_text {
+          width: 90%;
+          margin: auto;
+        }
+        .main_img {
+          text-align: center;
+          width: 100%;
+        }
+      }
+      @media (max-width: 630px) {
+        .main_img img {
+          width: 280px;
+          height: 280px;
+          margin: 0;
+        }
+        .main_text h1 {
+          font-size: 25px;
+        }
+      }
+
+      /************************main section is closed*******************************/
+      .section1 {
+        width: 100%;
+        height: 400px;
+        background-color: green;
+        display: flex;
+        justify-content: space-around;
+      }
+      .box {
+        width: 31%;
+        height: 330px;
+        margin-top: 40px;
+        border: 2px solid black;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .box:hover {
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+      }
+      .box h1 {
+      }
+      .box p {
+        text-align: justify;
+        padding: 15px;
+      }
+      .box button {
+        width: 120px;
+        height: 25px;
+        background-color: black;
+        color: green;
+        border-radius: 10px;
+      }
+      .box button:hover {
+        background-color: white;
+        color: black;
+      }
+      @media (max-width: 992px) {
+        .section1 {
+          flex-wrap: wrap;
+          height: 1250px;
+        }
+        .box {
+          width: 32%;
+          height: 360px;
+        }
+      }
+      /**********************************section1 is closed***********************************/
+      .section2 {
+        mx-width: 100%;
+        height: 700px;
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+      }
+      .imgbox {
+        width: 23%;
+      }
+      .imgbox img {
+        margin-top: 10px;
+        width: 320px;
+        height: 300px;
+        border: 1px solid green;
+      }
+
+      .imgbox img:hover {
+        /*	border-radius: 50%;*/
+        transform: skew(5deg);
+      }
+      @media (max-width: 1350px) {
+        .imgbox img {
+          width: 250px;
+          height: 270px;
+        }
+      }
+      @media (max-width: 1060px) {
+        .section2 {
+          flex-wrap: wrap;
+          height: 1200px;
+        }
+        .imgbox {
+          width: 45%;
+        }
+        .imgbox img {
+          width: 420px;
+          height: 270px;
+        }
+      }
+      @media (max-width: 992px) {
+        .section2 {
+          flex-wrap: wrap;
+          height: 2400px;
+        }
+        .imgbox {
+          width: 90%;
+        }
+        .imgbox img {
+          width: 100%;
+        }
+      }
+      /*******************************section2 is closed************************************/
+      .section3 {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-color: green;
+      }
+      .map {
+        width: 50%;
+      }
+      .map iframe {
+        margin-top: 20px;
+        margin-left: 20px;
+        z-index: 2;
+        -webkit-box-shadow: 0 1px 5px black, 0 0 40px black inset;
+        -moz-box-shadow: 5px 5px black, 0 0 40px black inset;
+        box-shadow: 2px 5px 8px black, 0 0 40px black inset;
+      }
+
+      .contact {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .contact form {
+        width: 100%;
+      }
+      input {
+        width: 80%;
+        height: 30px;
+        margin-top: 15px;
+      }
+      textarea {
+        width: 80%;
+        height: 200px;
+        margin-top: 15px;
+      }
+      button {
+        width: 150px;
+        height: 25px;
+        background-color: black;
+        color: white;
+        margin-top: 15px;
+        border-radius: 8px;
+      }
+
+      textarea:focus {
+        background-color: black;
+        color: white;
+      }
+      input:focus {
+        background-color: black;
+        color: white;
+      }
+      @media (max-width: 1180px) {
+        .section3 {
+          height: 1000px;
+          flex-wrap: wrap;
+        }
+        .map {
+          width: 90%;
+          
+          margin: auto;
+        }
+        .map iframe {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        .contact {
+          width: 90%;
+          margin: auto;
+        }
+      }
+      /*****************************section3 is closed**************************/
+      footer {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      footer div h1 {
+        font-size: 22px;
+      }
+      @media (max-width: 810px) {
+        footer div h1 {
+          font-size: 15px;
+        }
+      }
+
+      @media (max-width: 540px) {
+        footer div h1 {
+          font-size: 10px;
+        }
+      }
+      @media (max-width: 370px) {
+        footer div h1 {
+          font-size: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="#">home</a>
+        <a href="#">blog</a>
+        <a href="#">service</a>
+        <a href="#">about us</a>
+        <a href="#">contact us</a>
+      </div>
+    </header>
+    <!-- header section is closed -->
+    <main>
+      <div class="main_text">
+        <h1>HK CLASSES SURENDRNAGAR</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button>LEARN...</button>
+      </div>
+      <div class="main_img">
+        <img src="img.png" />
+      </div>
+    </main>
+    <!-- ------------------main section is closed ----------------------------->
+    <section class="section1">
+      <div class="box">
+        <h1>HK CLASSES</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button>SUBMIT</button>
+      </div>
+      <div class="box">
+        <h1>HK CLASSES</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button>SUBMIT</button>
+      </div>
+      <div class="box">
+        <h1>HK CLASSES</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button>SUBMIT</button>
+      </div>
+    </section>
+    <!-- section1 is closed -->
+    <section class="section2">
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+      <div class="imgbox">
+        <img src="img.png" />
+      </div>
+    </section>
+    <!--------------------------- section2 is closed ---------------------------->
+    <section class="section3">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117761.06765443753!2d71.58168660766594!3d22.727001244940894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3959414471fe94db%3A0xeaddb4f3da315316!2sHK%20Computer%20Classes%20%26%20HK%20PC%20SOLUTION!3m2!1d22.727016499999998!2d71.651727!5e0!3m2!1sen!2sin!4v1679719764310!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contact">
+        <form>
+          <h1>CONTACT FORM</h1>
+          <input type="text" name="" placeholder="ENTER YOUR NAME" /><br />
+          <input type="text" name="" placeholder="ENTER YOUR EMAIL" /><br />
+          <textarea placeholder="ENTER YOUR MESSAGES "></textarea><br />
+          <button>submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- section3 is closed -->
+    <footer>
+      <div>
+        <h1>
+          Copyright devlopment by HK CLASSES © 2008 Apple Inc. All rights
+          reserved..
+        </h1>
+      </div>
+    </footer>
+  </body>
+</html>
